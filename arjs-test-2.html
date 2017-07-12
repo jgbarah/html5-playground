@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- include A-Frame obviously -->
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+    <!-- include ar.js for A-Frame -->
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
+      <!-- create your content here. just a box for now -->
+      <a-torus position="0 0 -6" radius="4" radiusTubular="0.5" color="red"></a-torus>
+      <a-torus position="0 -0.125 -7" radius="3.5" radiusTubular="0.5" color="red"></a-torus>
+      <a-torus position="0 -0.25 -8" radius="3" radiusTubular="0.5" color="red"></a-torus>
+      <a-torus position="0 -0.375 -9" radius="2.5" radiusTubular="0.5" color="red"></a-torus>
+      <a-torus position="0 -0.5 -10" radius="2" radiusTubular="0.5" color="red"></a-torus>
+      <a-torus position="0 -0.625 -11" radius="1.5" radiusTubular="0.5" color="red"></a-torus>
+      <a-torus position="0 -0.75 -12" radius="1" radiusTubular="0.5" color="red"></a-torus>
+      <a-torus position="0 -0.875 -12" radius=".5" radiusTubular="0.5" color="red"></a-torus>
+      <a-text position="-2.55 0.675 -5" color="black" scale="3 3 3" value="That's all folks!!"></a-text>
+
+      <!-- define a camera which will move according to the marker position -->
+      <a-marker-camera preset='hiro'></a-marker-camera>
+    </a-scene>
+  </body>
+</html>
+
